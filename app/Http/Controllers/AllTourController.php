@@ -11,6 +11,6 @@ class AllTourController extends Controller
     {
         $tours = Tour::all();
 
-        return view('blog', compact('tours')); // PENTING!
+        return view('allpackage', compact('tours'));
     }
 }

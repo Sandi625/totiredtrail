@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="shortcut icon" href="{{ asset('Images/icon.png') }}" type="image/x-icon" />
-       <title>Blog | Vamos</title>
-    <link rel="stylesheet" href="{{ asset('css/blog2.css') }}">
+       <title>Blog | To Tired Trail</title>
       <link rel="stylesheet" href="{{ asset('assetsFE/css/styleblog.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
   </head>
@@ -32,7 +31,7 @@
     </div>
 
 <nav>
-    <a href="#" class="brand-logo">Vamos</a>
+    <a href="#" class="brand-logo">To Tired Trail</a>
     <ul class="links">
             <li class="link">
                 <b><a href="{{ route('home') }}" >Home</a></b>

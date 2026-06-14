@@ -21,23 +21,25 @@
     </div>
 </section> --}}
 
-<section class="googleMap" style="padding: 50px 0; background: var(--bg-color);">
+ <section class="googleMap" style="padding: 50px 0; background: var(--bg-color);">
     <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
         <h2 style="font-size: 28px; margin-bottom: 20px; color: var(--text-color);">
             Find Us on Google Maps
         </h2>
+
         <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-           <iframe
-            width="100%"
-            height="450"
-            style="border:0;"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.1751762788436!2d114.3070204!3d-8.2199092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f17.5!3m3!1m2!1s0x2dd14fe409fac9a5%3A0x8fa550e627d8b218!2sToko%20Mentari%202!5e0!3m2!1sen!2sid!4v1704800000000">
-        </iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.06705472191862!2d114.25716774859937!3d-8.205640861862353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14f6d1d6614bb%3A0xf9c55b4687931297!2sIJEN%20CRATER%20TOUR%20INDONESIA!5e1!3m2!1sid!2sid!4v1781412143748!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </div>
+</section>
 
     {{-- <a href="{{ route('allpackage.page') }}" class="backButton">
         <abbr title="Back">
@@ -51,7 +53,7 @@
     <div class="footerDetails">
 
         <div class="footerDescription">
-            <h1 class="footerTitle">Vamos</h1>
+            <h1 class="footerTitle">to tired trail</h1>
             <p class="footerPara">
                 Discover New Destinations. See breath-taking places and experience them from your device online.
                 <br><br>
@@ -118,7 +120,7 @@
   <li>
     <span>Instagram :</span>
     <a href="https://www.instagram.com/vamosadventure.idn/" target="_blank" rel="noopener">
-      @vamosadventure.idn
+      @totoriedtrail
     </a>
   </li>
 
@@ -134,7 +136,7 @@
   <li>
     <span>Email :</span>
     <a href="mailto:vamosadventure.idn@gmail.com">
-      vamosadventure.idn@gmail.com
+      email@.com
     </a>
   </li>
 </ul>
@@ -161,7 +163,7 @@
         <div class="footerCopyright">
             <p>
                 This website is designed and developed by
-                <span>Vamos Teams</span>
+                <span>to tired trail</span>
             </p>
         </div>
     </div>

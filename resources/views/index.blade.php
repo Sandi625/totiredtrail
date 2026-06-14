@@ -7,7 +7,8 @@
 
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assetsFE/img/favicon.png" type="image/x-icon">
-
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
@@ -34,7 +35,7 @@
                         <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li>
-                        <a href="#destination" class="nav__link">Destination</a>
+                        <a href="{{ route('allpackage.page') }}" class="nav__link">Tour
                     </li>
                     <li>
                         <a href="#testimonials" class="nav__link">Testimonials</a>
@@ -68,56 +69,81 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <img src="assetsFE/img/home-bg.png" class="home__bg" alt="image">
-            <div class="home__blur"></div>
+ <section class="home section" id="home">
 
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">Travel <br> Around <br> The World</h1>
+    <!-- BACKGROUND VIDEO -->
+    <iframe
+        class="home__video"
+        src="https://www.youtube.com/embed/jCyyMbfC4s8?autoplay=1&mute=1&loop=1&playlist=jCyyMbfC4s8&controls=0&showinfo=0&rel=0&modestbranding=1"
+        title="Background Video"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
 
-                    <p class="home__description">
-                        Explore the best beautiful tourist spots in
-                        the countries and see the world on all your
-                        amazing adventures.
-                    </p>
+    <!-- HOME CONTENT -->
+    <div class="home__container container grid">
 
-                    <a href="#destination" class="button button__opa-30">
-                        Explore The World
-                        <i class="ri-arrow-right-long-fill"></i>
-                    </a>
-                </div>
+        <!-- TEXT -->
+        <div class="home__data">
 
-                <div class="home__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <article class="home__article swiper-slide">
-                            <img src="assetsFE/img/home-img-1.png" alt="image" class="home__img">
-                        </article>
+            <h1 class="home__title">
+                Explore  the <br>
+                Beauty <br>
+                of Java
+            </h1>
 
-                        <article class="home__article swiper-slide">
-                            <img src="assetsFE/img/home-img-2.png" alt="image" class="home__img">
-                        </article>
+            <p class="home__description">
+              Experience stunning landscapes, majestic mountains, beautiful beaches, and unforgettable adventures throughout Java.
+            </p>
 
-                        <article class="home__article swiper-slide">
-                            <img src="assetsFE/img/home-img-3.png" alt="image" class="home__img">
-                        </article>
+            <a href="#destination" class="button button__opa-30">
+                Explore The Java
+                <i class="ri-arrow-right-long-fill"></i>
+            </a>
 
-                        <article class="home__article swiper-slide">
-                            <img src="assetsFE/img/home-img-4.png" alt="image" class="home__img">
-                        </article>
-                    </div>
+        </div>
 
-                    <!-- Navigation buttons -->
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-long-fill"></i>
-                    </div>
+        <!-- SWIPER -->
+        <div class="home__swiper swiper">
 
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-long-fill"></i>
-                    </div>
-                </div>
+            <div class="swiper-wrapper">
+
+                <article class="home__article swiper-slide">
+                    <img src="assetsFE/img/6.png" alt="image" class="home__img">
+                </article>
+
+                <article class="home__article swiper-slide">
+                    <img src="assetsFE/img/26.jpg" alt="image" class="home__img">
+                </article>
+
+                <article class="home__article swiper-slide">
+                    <img src="assetsFE/img/45.jpg" alt="image" class="home__img">
+                </article>
+
+                <article class="home__article swiper-slide">
+                    <img src="assetsFE/img/46.jpg" alt="image" class="home__img">
+                </article>
+
             </div>
-        </section>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-long-fill"></i>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-long-fill"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
         <section class="destination section" id="destination">
             <h2 class="section__title">Find Your Best <br> Destination</h2>
 
@@ -388,11 +414,11 @@
 
         <a href="{{ route('user.gallery.images') }}">
             <article class="gallery__card">
-                <img src="assetsFE/img/gallery-img-1.png" alt="image" class="gallery__img">
+                <img src="assetsFE/img/ijenbaru2.jpg" alt="image" class="gallery__img">
                 <div class="gallery__shadow"></div>
 
                 <div class="gallery__data">
-                    <h3 class="gallery__subtitle">Nusa</h3>
+                    <h3 class="gallery__subtitle">Ijen Crater</h3>
                     <h2 class="gallery__title">Indonesia</h2>
                 </div>
             </article>
@@ -400,36 +426,36 @@
 
         <a href="{{ route('user.gallery.images') }}">
             <article class="gallery__card">
-                <img src="assetsFE/img/gallery-img-2.png" alt="image" class="gallery__img">
+                <img src="assetsFE/img/7.jpg" alt="image" class="gallery__img">
                 <div class="gallery__shadow"></div>
 
                 <div class="gallery__data">
-                    <h3 class="gallery__subtitle">Cook</h3>
-                    <h2 class="gallery__title">Nueva Zelanda</h2>
+                    <h3 class="gallery__subtitle">Bromo</h3>
+                    <h2 class="gallery__title">Indonesia</h2>
                 </div>
             </article>
         </a>
 
         <a href="{{ route('user.gallery.images') }}">
             <article class="gallery__card">
-                <img src="assetsFE/img/gallery-img-3.png" alt="image" class="gallery__img">
+                <img src="assetsFE/img/IMG_3343.jpg" alt="image" class="gallery__img">
                 <div class="gallery__shadow"></div>
 
                 <div class="gallery__data">
-                    <h3 class="gallery__subtitle">Bora Bora</h3>
-                    <h2 class="gallery__title">Polinesia</h2>
+                    <h3 class="gallery__subtitle">Tumpak Sewu</h3>
+                    <h2 class="gallery__title">Indonesia</h2>
                 </div>
             </article>
         </a>
 
         <a href="{{ route('user.gallery.images') }}">
             <article class="gallery__card">
-                <img src="assetsFE/img/gallery-img-4.png" alt="image" class="gallery__img">
+                <img src="assetsFE/img/borobudur.jpg" alt="image" class="gallery__img">
                 <div class="gallery__shadow"></div>
 
                 <div class="gallery__data">
-                    <h3 class="gallery__subtitle">Santorini</h3>
-                    <h2 class="gallery__title">Grecia</h2>
+                    <h3 class="gallery__subtitle">Yogyakarta</h3>
+                    <h2 class="gallery__title">Indonesia</h2>
                 </div>
             </article>
         </a>
@@ -437,8 +463,10 @@
     </div>
 </section>
 
+
+
         <!--==================== JOIN ====================-->
-        <section class="join section" id="join">
+        {{-- <section class="join section" id="join">
             <div class="join__container container grid">
                 <div class="join__data">
                     <h2 class="section__title">Your Journey <br> Starts Here</h2>
@@ -459,7 +487,34 @@
                 <img src="assetsFE/img/join-img.png" alt="image" class="join__img">
             </div>
         </section>
-    </main>
+    </main> --}}
+
+   <section class="googleMap" style="padding: 50px 0; background: var(--bg-color);">
+    <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
+        <h2 style="font-size: 28px; margin-bottom: 20px; color: var(--text-color);">
+            Find Us on Google Maps
+        </h2>
+
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.06705472191862!2d114.25716774859937!3d-8.205640861862353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14f6d1d6614bb%3A0xf9c55b4687931297!2sIJEN%20CRATER%20TOUR%20INDONESIA!5e1!3m2!1sid!2sid!4v1781412143748!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    {{-- <a href="{{ route('allpackage.page') }}" class="backButton">
+        <abbr title="Back">
+            <img class="buttonn" src="https://img.icons8.com/material-outlined/48/142361/back--v1.png" />
+        </abbr>
+    </a> --}}
+</section>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
@@ -524,26 +579,37 @@
                     </ul>
                 </div>
 
-                <div>
-                    <h3 class="footer__title">Social</h3>
+               <div>
+    <h3 class="footer__title">Social</h3>
 
-                    <div class="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-circle-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-twitter-x-fill"></i>
-                        </a>
-                    </div>
-                </div>
+ <div class="footer__social">
+    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+        <i class="ri-facebook-circle-fill"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+        <i class="ri-instagram-fill"></i>
+    </a>
+
+    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+        <i class="ri-twitter-x-fill"></i>
+    </a>
+
+    <a href="https://wa.me/6281234567890" target="_blank" class="footer__social-link">
+        <i class="ri-whatsapp-fill"></i>
+    </a>
+
+  <a href="https://www.tripadvisor.com/" target="_blank" class="footer__social-link">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/tripadvisor.png"
+         alt="TripAdvisor"
+         class="tripadvisor-icon">
+</a>
+</div>
             </div>
         </div>
 
         <span class="footer__copy">
-            &#169; All Rights Reserved By Bedimcode
+            &#169; 2026 Totired Trail. All rights reserved.
         </span>
     </footer>
 

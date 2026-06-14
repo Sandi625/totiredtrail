@@ -10,13 +10,13 @@
    <link rel="shortcut icon" href="{{ asset('Images/icon.png') }}" type="image/x-icon" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
-    <title>Gallery | Vamos</title>
+    <title>Gallery | To Tired Trail</title>
 
 </head>
 
 <body>
 
-    <div class="loaderr">
+    {{-- <div class="loaderr">
         <div class="loader-inner">
             <div class="loader-line-wrap">
                 <div class="loader-line"></div>
@@ -34,10 +34,10 @@
                 <div class="loader-line"></div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <nav>
-        <a href="#" class="brand-logo">Vamos</a>
+        <a href="#" class="brand-logo">To Tired Trail</a>
       <ul class="links">
             {{-- <li class="link">
                 <b><a href="{{ route('home') }}" >Home</a></b>
@@ -69,13 +69,13 @@
        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
     <!-- Tombol Images -->
     <a href="{{ route('user.gallery.images') }}" class="scrollButton">
-        <img src="https://img.icons8.com/material-sharp/24/e48111/camera--v2.png" />
+        <img src="https://img.icons8.com/material-sharp/24/ffffff/camera--v2.png" />
         <p>View Photos</p>
     </a>
 
     <!-- Tombol Videos -->
     <a href="{{ route('user.gallery.videos') }}" class="scrollButton">
-        <img src="https://img.icons8.com/material-sharp/24/e48111/video.png" />
+        <img src="https://img.icons8.com/material-sharp/24/ffffff/video.png" />
         <p>View Videos</p>
     </a>
 </div>

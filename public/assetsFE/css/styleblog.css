@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
   /* overflow-x: hidden; */
@@ -37,7 +38,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #142361;
+  color: #000000;
   border-bottom: 2px solid #4d608a;
   transition: 0.5s all ease-in-out;
 }
@@ -53,7 +54,7 @@ nav.active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #142361;
+  color: #000000;
   border-bottom: 2px solid #4d608a;
   transition: 0.5s all ease-in-out;
   background-color: #ffffff5b;
@@ -70,7 +71,7 @@ nav.active {
   width: 150px;
   font-family: "Pacifico", cursive;
   text-decoration: none;
-  color: #142361;
+  color: #000000;
 }
 
 .links {
@@ -97,13 +98,13 @@ nav.active {
 }
 
 .link:hover {
-  color: #e48111;
+  color: #ffffff;
 }
 
 .hamburger div {
   width: 30px;
   height: 4px;
-  background-color: #fda90b;
+  background-color: #ffffff;
   margin-bottom: 4px;
   border-radius: 5px;
   transition: 0.5s all ease;
@@ -276,7 +277,7 @@ nav.active {
 
 .para {
   margin-bottom: 50px;
-  color: #142361;
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -291,8 +292,8 @@ nav.active {
   flex-direction: row;
   justify-content: space-between;
   padding: 50px;
-  background: #142361;
-  -webkit-box-shadow: 5px 5px 24px 1px rgba(20, 35, 97, 0.562);
+  background: #000000;
+  -webkit-box-shadow: 5px 5px 24px 1px rgba(0, 0, 0, 0.562);
   box-shadow: 5px 5px 24px 1px rgba(20, 35, 97, 0.575);
   border-radius: 10px;
   color: #c1d0f1;
@@ -320,7 +321,7 @@ nav.active {
 }
 
 .imgQuote {
-  color: #eb9431;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -329,7 +330,7 @@ nav.active {
 }
 
 .para h2 {
-  color: #142361;
+  color: #000000;
 }
 
 hr {
@@ -338,10 +339,6 @@ hr {
 
 .para p {
   margin-bottom: 20px;
-}
-
-.para.two {
-  white-space: pre-line;
 }
 
 .thanks {
@@ -369,7 +366,7 @@ hr {
 
 .contentContainer ol {
   width: 90%;
-  color: #142361be;
+  color: #000000be;
   margin-left: 30px;
   margin-top: 10px;
 }
@@ -419,7 +416,7 @@ hr {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #142361;
+  background: #000000;
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -534,9 +531,10 @@ hr {
   height: 100%;
   border: 0;
 }
+
 /* footer */
 footer {
-  background: #142361;
+  background: #000000;
   color: white;
   padding: 0;   /* reset biar copyright full */
 }
@@ -583,7 +581,7 @@ footer {
 }
 
 .footerCopyright {
-  background: #ca7717;
+  background: #000000;
   min-height: 50px;
   display: flex;
   align-items: center;
@@ -601,8 +599,10 @@ footer {
 
 
 
+
+
 .footerCopyright p span {
-  color: #142361;
+  color: #000000;
   font-weight: 500;
 }
 
@@ -674,7 +674,6 @@ footer {
     border-bottom: none; /* hilangkan garis bawah di kolom terakhir */
   }
 }
-
 
 
 
@@ -905,9 +904,358 @@ form#bookingForm button + button {
 
 
 
+.customTripSection {
+  padding: 50px 20px;
+  background: #f4f8ff;
+}
+
+.customTripContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.customTripTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.customTripDescription {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.customTripForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.customTripForm input,
+.customTripForm textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.customTripForm input[readonly] {
+  background: #e9ecef;
+  color: #555;
+}
+
+.customTripBtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.emailBtn {
+  background-color: #ffffff;
+}
+
+.whatsappBtn {
+  background-color: #25d366;
+}
+
+/* Hover efek tombol */
+.customTripBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .customTripTitle {
+    font-size: 2rem;
+  }
+  .customTripForm input,
+  .customTripForm textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+  .customTripBtn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
 
 
 
+/* Tablet & foldable (≤1200px) */
+@media screen and (max-width: 1200px) {
+  .content {
+    position: relative;
+    bottom: auto;
+    left: 0;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .title {
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
+  }
+}
+
+/* HP mini / layar ≤350px */
+/* Sudah ada untuk ≤350px */
+@media screen and (max-width: 350px) {
+  .content {
+    padding-top: 80px;
+  }
+  .title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+  .para, .imageDescription {
+    font-size: 0.85rem;
+  }
+  .imgDescription {
+    padding: 10px;
+  }
+  button, .navLinkButton {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Tambahan untuk ≤300px */
+@media screen and (max-width: 300px) {
+  .content {
+    padding-top: 60px; /* kurangi lagi */
+  }
+  .title {
+    font-size: 1rem;  /* lebih kecil */
+    line-height: 1.2;
+  }
+  .para, .imageDescription {
+    font-size: 0.75rem;
+  }
+  .imgDescription {
+    padding: 6px;
+  }
+  button, .navLinkButton {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+}
+
+/* Tambahan untuk ≤200px */
+@media screen and (max-width: 200px) {
+  .content {
+    padding-top: 40px;
+  }
+  .title {
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+  .para, .imageDescription {
+    font-size: 0.65rem;
+  }
+  .imgDescription {
+    padding: 4px;
+  }
+  button, .navLinkButton {
+    font-size: 0.6rem;
+    padding: 4px 8px;
+  }
+}
 
 
 
+.otherDetails {
+  display: flex;
+  align-items: center; /* sejajarkan icon sama teks */
+  gap: 2px; /* jarak antar item (ubah sesuai kebutuhan, misal 10px) */
+  margin: 15px 0;
+}
+
+.otherDetails p {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* jarak icon dan teks */
+  color: #fff;
+  font-size: 16px;
+  margin: 0; /* biar nggak ada tambahan jarak default */
+}
+
+.otherDetails img {
+  width: 20px; /* kecilin icon biar pas */
+  height: auto;
+}
+
+
+
+   .popup {
+                        display: none;
+                        position: fixed;
+                        z-index: 9999;
+                        padding-top: 60px;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.8);
+                    }
+
+                    .popup-content {
+                        margin: auto;
+                        background: #fff;
+                        border-radius: 10px;
+                        padding: 15px;
+                        width: 80%;
+                        max-width: 700px;
+                        position: relative;
+                        text-align: center;
+                    }
+
+                    .close {
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                        font-size: 28px;
+                        font-weight: bold;
+                        color: #aaa;
+                        cursor: pointer;
+                    }
+
+                    .close:hover {
+                        color: #000;
+                    }
+
+                    /* Slider */
+                    .slider {
+                        position: relative;
+                        max-width: 100%;
+                        overflow: hidden;
+                    }
+
+                    .slides img {
+                        width: 100%;
+                        display: none;
+                        border-radius: 10px;
+                    }
+
+                    .slides img.active {
+                        display: block;
+                    }
+
+                    .prev,
+                    .next {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 30px;
+                        font-weight: bold;
+                        color: #333;
+                        background: rgba(255, 255, 255, 0.7);
+                        padding: 8px 12px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+
+                    .prev {
+                        left: 10px;
+                    }
+
+                    .next {
+                        right: 10px;
+                    }
+
+
+                      .swiper {
+            width: 100%;
+            height: 100vh;
+            /* full layar */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* supaya konten tetap di atas */
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+
+
+.contactInfo {
+  list-style: none;
+  padding: 0;
+  margin: 15px auto 0;
+  max-width: 360px;
+}
+
+/* baris */
+.contactInfo li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* label kiri */
+.contactInfo span {
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+/* value kanan */
+.contactInfo a {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  word-break: break-word;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 mobile */
+@media (max-width: 480px) {
+  .contactInfo li {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+
+  .contactInfo a {
+    text-align: center;
+  }
+}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 999px;
+  border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #d4d4d4;
+}
+
+html{
+  scrollbar-color: #fff #000;
+}

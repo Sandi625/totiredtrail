@@ -123,21 +123,22 @@
             <img src="https://img.icons8.com/fluency/50/4a90e2/filled-like.png" alt="Thank You" />
         </div>
     </div>
-{{--
-    <div class="contentContainer">
-        <p class="contentHeader">Other Tour Packages</p>
-        <ol>
-            @forelse ($allTours ?? [] as $item)
-                <li>
-                    <a href="{{ route('tour.detail', $item->slug) }}">
-                        {{ $item->title }}
-                    </a>
-                </li>
-            @empty
-                <li class="text-muted">Belum ada paket tour lain</li>
-            @endforelse
-        </ol>
-    </div> --}}
+
+   <div class="contentContainer">
+    <p class="contentHeader">Other Tour Packages</p>
+
+    <ol>
+        @forelse ($otherTours ?? [] as $item)
+            <li>
+                <a href="{{ route('tour.detail', $item->slug) }}">
+                    {{ $item->title }}
+                </a>
+            </li>
+        @empty
+            <li class="text-muted">Belum ada paket tour lain</li>
+        @endforelse
+    </ol>
+</div>
 
 </section>
 

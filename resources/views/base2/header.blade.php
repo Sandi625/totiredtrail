@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ asset('assetsFE/css/styleblog.css') }}">
    <link rel="shortcut icon" href="{{ asset('Images/icon.png') }}" type="image/x-icon" />
-    <title>Blog | Vamos</title>
+    <title>Blog | To Tired Trail</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav>
-      <a href="#" class="brand-logo">Vamos</a>
+      <a href="#" class="brand-logo">To Tired Trail</a>
       {{-- <ul class="links">
             <li class="link">
                 <b><a href="{{ route('home') }}">Home</a></b>

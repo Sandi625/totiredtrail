@@ -584,10 +584,10 @@
                                         </a>
 
                                         <!-- Form logout tersembunyi -->
-                                        {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                             style="display: none;">
                                             @csrf
-                                        </form> --}}
+                                        </form>
 
                                     </li>
                                 </ul>

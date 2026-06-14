@@ -1,7 +1,7 @@
 
 
     <div class="modal">
-        <img src="https://img.icons8.com/ios-filled/50/e48111/close-window.png" class="close" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/close-window.png" class="close" />
     </div>
     <div class="content">
 
@@ -13,7 +13,7 @@
   <div class="footerDetails">
     <!-- Kolom 1 -->
     <div class="footerDescription">
-      <h1 class="footerTitle">Vamos Adventure</h1>
+      <h1 class="footerTitle">To Tired Trail</h1>
       <p class="footerPara">
         Discover New Destinations. See breath-taking places and experience
         them from your device online.
@@ -46,7 +46,7 @@
            class="contactOption"
            aria-label="Visit our Instagram">
             <abbr title="Instagram">
-                <img src="https://img.icons8.com/ios-glyphs/60/ca7717/instagram-new.png" alt="Instagram Icon">
+                <img src="https://img.icons8.com/ios-glyphs/60/ffffff/instagram-new.png" alt="Instagram Icon">
             </abbr>
         </a>
 
@@ -57,14 +57,14 @@
            class="contactOption"
            aria-label="Chat via WhatsApp">
             <abbr title="WhatsApp">
-                <img src="https://img.icons8.com/material-outlined/48/ca7717/whatsapp--v1.png" alt="WhatsApp Icon">
+                <img src="https://img.icons8.com/material-outlined/48/ffffff/whatsapp--v1.png" alt="WhatsApp Icon">
             </abbr>
         </a>
 
         <!-- Phone -->
         <div class="contactOption call" aria-label="Call us">
             <abbr title="Call">
-                <img src="https://img.icons8.com/ios/48/ca7717/phone.png" alt="Phone Icon">
+                <img src="https://img.icons8.com/ios/48/ffffff/phone.png" alt="Phone Icon">
             </abbr>
         </div>
 
@@ -73,7 +73,7 @@
            class="contactOption"
            aria-label="Send Email">
             <abbr title="Email">
-                <img src="https://img.icons8.com/ios/50/ca7717/gmail-new.png" alt="Email Icon">
+                <img src="https://img.icons8.com/ios/50/ffffff/gmail-new.png" alt="Email Icon">
             </abbr>
         </a>
 
@@ -85,7 +85,7 @@
   <li>
     <span>Instagram :</span>
     <a href="https://www.instagram.com/vamosadventure.idn/" target="_blank" rel="noopener">
-      @vamosadventure.idn
+      totiredtrail
     </a>
   </li>
 
@@ -101,7 +101,7 @@
   <li>
     <span>Email :</span>
     <a href="mailto:vamosadventure.idn@gmail.com">
-      vamosadventure.idn@gmail.com
+     email@.com
     </a>
   </li>
 </ul>

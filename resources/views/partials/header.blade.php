@@ -14,13 +14,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-    <title>Vamos Tour</title>
+    <title>to tired trail</title>
 </head>
 
 <body>
 
     <nav>
-        <a href="#" class="brand-logo">Vamos</a>
+        <a href="#" class="brand-logo">To Tired Trail</a>
         <ul class="links">
             <li class="link">
                 {{-- <b><a href="{{ route('home') }}" >Home</a></b> --}}
