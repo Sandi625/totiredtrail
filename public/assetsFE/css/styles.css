@@ -1882,3 +1882,66 @@ h3 {
     position: relative;
     z-index: 2;
 }
+
+
+.tripadvisor-review{
+    margin-top: 3rem;
+}
+
+.tripadvisor-review__card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+    background: var(--container-color);
+    padding:2rem;
+    border-radius:1.5rem;
+    box-shadow:0 4px 20px rgba(0,0,0,.1);
+}
+
+.tripadvisor-review__logo{
+    width:220px;
+}
+
+.tripadvisor-review__content{
+    flex:1;
+}
+
+.tripadvisor-review__content h3{
+    font-size:1.5rem;
+    margin-bottom:.5rem;
+}
+
+.tripadvisor-review__rating{
+    color:#00aa6c;
+    font-weight:700;
+    margin-bottom:.75rem;
+}
+
+.tripadvisor-review__button{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    margin-top:1rem;
+    padding:.8rem 1.5rem;
+    background:#00aa6c;
+    color:#fff;
+    border-radius:999px;
+    text-decoration:none;
+}
+
+.tripadvisor-review__button:hover{
+    opacity:.9;
+}
+
+@media screen and (max-width:768px){
+
+    .tripadvisor-review__card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .tripadvisor-review__logo{
+        width:180px;
+    }
+}

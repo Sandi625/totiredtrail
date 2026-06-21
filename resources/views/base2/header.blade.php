@@ -12,15 +12,18 @@
     <!-- Navbar -->
     <nav>
       <a href="#" class="brand-logo">To Tired Trail</a>
-      {{-- <ul class="links">
+     <ul class="links">
             <li class="link">
-                <b><a href="{{ route('home') }}">Home</a></b>
+                <b><a href="{{ route('home') }}" >Home</a></b>
             </li>
+            {{-- <li class="link"><a href="{{ route('places.page') }}">Places</a></li> --}}
             <li class="link"><a href="{{ route('allpackage.page') }}">Tour</a></li>
-            <li class="link"><a href="{{ route('user.blog.index') }}" style="color:#f2870c;">Blog</a></li>
+            <li class="link"><a href="{{ route('user.blog.index') }}">Blog</a></li>
             <li class="link"><a href="{{ route('user.gallery.images') }}">Gallery</a></li>
-            <li class="link"><a href="{{ route('login') }}">Login</a></li>
-      </ul> --}}
+
+            <!-- 🔥 Tambahkan Login di sini -->
+
+        </ul>
 
       <div class="hamburger">
         <div></div><div></div><div></div>

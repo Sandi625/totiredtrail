@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="shortcut icon" href="{{ asset('Images/icon.png') }}" type="image/x-icon" />
        <title>Blog | To Tired Trail</title>
-      <link rel="stylesheet" href="{{ asset('assetsFE/css/styleblog.css') }}">
+      <link rel="stylesheet" href="{{ asset('assetsFE/css/userblog.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
   </head>
   <body>
-    <div class="loaderr">
+    {{-- <div class="loaderr">
       <div class="loader-inner">
         <div class="loader-line-wrap">
           <div class="loader-line"></div>
@@ -28,7 +28,7 @@
           <div class="loader-line"></div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
 <nav>
     <a href="#" class="brand-logo">To Tired Trail</a>
@@ -36,13 +36,13 @@
             <li class="link">
                 <b><a href="{{ route('home') }}" >Home</a></b>
             </li>
-            {{-- <li class="link"><a href="{{ route('places.page') }}">Places</a></li>
+            {{-- <li class="link"><a href="{{ route('places.page') }}">Places</a></li> --}}
             <li class="link"><a href="{{ route('allpackage.page') }}">Tour</a></li>
-            <li class="link"><a href="{{ route('user.blog.index') }}"style="color: #f2870c">Blog</a></li>
+            <li class="link"><a href="{{ route('user.blog.index') }}">Blog</a></li>
             <li class="link"><a href="{{ route('user.gallery.images') }}">Gallery</a></li>
 
             <!-- 🔥 Tambahkan Login di sini -->
-            <li class="link"><a href="{{ route('login') }}">Login</a></li> --}}
+
         </ul>
 
     <div class="hamburger">
@@ -71,7 +71,7 @@
       </div>
       <a href="#blog" class="scrollContainer"
         ><button class="scrollButton">
-          <img src="https://img.icons8.com/ios-filled/50/e48111/book.png" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/book.png" />
           <p>Read</p>
         </button></a
       >

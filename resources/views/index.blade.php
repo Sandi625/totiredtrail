@@ -44,7 +44,7 @@
                        <a href="{{ route('user.gallery.images') }}" class="nav__link">Gallery</a>
                     </li>
                     <li>
-                        <a href="#join" class="nav__link">Contact</a>
+                      <a href="{{ route('user.blog.index') }}" class="nav__link">Blog</a>
                     </li>
                 </ul>
 
@@ -306,34 +306,44 @@
     </div>
 </section>
 
-<!--==================== REVIEW MODAL ====================-->
-<div class="review-modal" id="reviewModal">
+<!--==================== TRIPADVISOR REVIEW ====================-->
+<div class="tripadvisor-review container">
 
-    <div class="review-modal__overlay"></div>
-
-    <div class="review-modal__content">
-
-        <button class="review-modal__close" id="reviewModalClose">
-            <i class="ri-close-line"></i>
-        </button>
+    <div class="tripadvisor-review__card">
 
         <img
-            src=""
-            alt="review-image"
-            class="review-modal__img"
-            id="reviewModalImg"
-        >
+            src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+            alt="TripAdvisor"
+            class="tripadvisor-review__logo">
 
-        <h2 class="review-modal__name" id="reviewModalName"></h2>
+        <div class="tripadvisor-review__content">
 
-        <p class="review-modal__rating" id="reviewModalRating"></p>
+            <h3>
+                Rated Excellent on TripAdvisor
+            </h3>
 
-        <p class="review-modal__text" id="reviewModalText"></p>
+            <p class="tripadvisor-review__rating">
+                ⭐⭐⭐⭐⭐ 5.0 • 114 Reviews
+            </p>
+
+            <p>
+                Recommended by 100% of travelers who joined our Mount Ijen Blue Fire Tour.
+            </p>
+
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g297694-d34058934-Mount_Ijen_Blue_Fire_Tour_Start_From_Bali-Denpasar_Bali.html"
+                target="_blank"
+                class="tripadvisor-review__button">
+
+                View All Reviews
+                <i class="ri-external-link-line"></i>
+
+            </a>
+
+        </div>
 
     </div>
 
 </div>
-
 
 
         <section class="hero-premium section" id="home">
@@ -465,6 +475,8 @@
 
 
 
+
+
         <!--==================== JOIN ====================-->
         {{-- <section class="join section" id="join">
             <div class="join__container container grid">
@@ -537,9 +549,11 @@
                             <a href="#" class="footer__link">Features</a>
                         </li>
 
-                        <li>
-                            <a href="#" class="footer__link">News & Blogs</a>
-                        </li>
+                       <li>
+    <a href="mailto:thetootiredtrail@gmail.com" class="footer__link">
+        thetootiredtrail@gmail.com
+    </a>
+</li>
                     </ul>
                 </div>
 
@@ -587,7 +601,7 @@
         <i class="ri-facebook-circle-fill"></i>
     </a>
 
-    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+    <a href="https://www.instagram.com/thetootiredtrail/" target="_blank" class="footer__social-link">
         <i class="ri-instagram-fill"></i>
     </a>
 
@@ -595,11 +609,11 @@
         <i class="ri-twitter-x-fill"></i>
     </a>
 
-    <a href="https://wa.me/6281234567890" target="_blank" class="footer__social-link">
+    <a href="https://wa.me/628133326201" target="_blank" class="footer__social-link">
         <i class="ri-whatsapp-fill"></i>
     </a>
 
-  <a href="https://www.tripadvisor.com/" target="_blank" class="footer__social-link">
+  <a href="https://www.tripadvisor.com/AttractionProductReview-g297694-d34058934-Mount_Ijen_Blue_Fire_Tour_Start_From_Bali-Denpasar_Bali.html" target="_blank" class="footer__social-link">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/tripadvisor.png"
          alt="TripAdvisor"
          class="tripadvisor-icon">
